@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>KicksFever</title>
+	<link rel="icon" type="image/x-icon" href="Imágenes/icono.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device—width, initial-scale=l">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<header>
+		<nav class="navbar-default navbar-fixed-top menu bg-grey ">
+			<div class="container ">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="#inicio">Inicio</a>
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#acerca">ACERCA DE</a></li>
+					<li><a href="#productos">PRODUCTOS</a></li>
+					<li><a href="#tiendas">TIENDAS</a></li>
+					<li><a href="#equipo">EQUIPO</a></li>
+					<li><a href="#contacto">CONTACTO</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+	<section>
+		<div class="jumbotron">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<h1>Mundo sneaker</h1>
+			<p>Bienvenido a Mundo Sneaker</p>
+			<form>
+				<input type="email" size="50" placeholder="Dirección de correo">
+				<button type="button" style="color: blue"> Suscribirse </button>
+			</form>
+		</div>
+	</section>
+	<!--Sección Acerca de-->
+	<section class="container-fluid">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>Acerca de nuestra compañía</h2>
+				<h4>Somos una empresa que ofrece los mejor en ropa, calzado, artículos y equipo para todos los deportes
+					con la más alta calidad y de las marcas más reconocidas.</h4>
+				<p>Fabricamos, importamos y exportamos todo tipo de artículos deportivos y textil deportiva para las
+					diferentes áreas del deporte. Nuestra experiencia en el deporte le garantiza obtener lo mejor en
+					cada artículo.</p>
+				<button class="btn btn-default btn-lg">Más información</button>
+			</div>
+			<div class="col-sm-4">
+				<img src="Imágenes/jordan4.png" alt="Jordan">
+			</div>
+	</section>
+	<!--Sección Nuestros valores-->
+	<section class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="Imágenes/jordan1.png" alt="Jordan1">
+			</div>
+			<div class="col-sm-8">
+				<h2>Nuestros valores</h2>
+				<h4><strong>MISIÓN:</strong> Satisfacer las necesidades de nuestros clientes, creando y comercializando
+					artículos de buena calidad.</h4>
+				<p><strong>VISIÓN:</strong> Ser una empresa líder en la venta de productos deportivos a nivel nacional e
+					internacional, ofreciendo mercadería deportiva de alta calidad y de las mejores marcas.</p>
+				<p><strong>VALORES:</strong> Compromiso, Honestidad, Innovación y Respeto.</p>
+			</div>
+		</div>
+	</section>
+	<!-- Sección Productos -->
+	<section class="container-fluid text-center">
+		<h2>NUESTROS PRODUCTOS</h2>
+		<h4>Lo que ofrecemos</h4>
+		<br>
+		<div class="row">
+			<!-- Imagen 1 -->
+			<div class="col-sm-4">
+				<img src="Imágenes/imagen1.png" alt="Imagen1">
+				<h4>CALZADO</h4>
+				<P>Lo mejor en calzado deportivo.</P>
+			</div>
+			<!-- Imagen 2 -->
+			<div class="col-sm-4">
+				<img src="Imágenes/imagen2.png" alt="Imagen2">
+				<h4>ROPA</h4>
+				<P>Gran variedad de ropa deportiva.</P>
+			</div>
+			<<!-- Imagen 3 -->
+				<div class="col-sm-4">
+					<img src="Imágenes/imagen3.png" alt="Imagen3">
+					<h4>BALONES</h4>
+					<P>Muchos diseños y colores</P>
+				</div>
+	</section>
+	<section class="container-fluid bd-gray>
+		<h2 class=" text-center">CONTACTO </h2>
+		<div class="row">
+			<div class="col-sm-5">
+				<h4>Informacion de contacto:</h4>
+				<p><span class="glyphicon glyphicon-envelope"></span> Col. Buenos Aires, Calle Lara No.4 </p>
+				<p><span class="glyphicon glyphicon—plus"></span> 0000-0000 </p>
+				<p><span class="glyphicon glyphicon-cloud"></span> mundodeportivo@gmail.com </p>
+			</div>
+			<div class="col-sm-7">
+				<form>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" name="name" placeholder="Nombre" type="text" required>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" name="email" placeholder="E-mail" type="email" required>
+							<textarea class="form-control" name="pregunta" placeholder="Pregunta" rows="4">
+						</textarea><br>
+
+							<div class="col-sm-12 form-group">
+								<button class="btn btn-default pull-right" type="submit">Enviar</button>
+
+								<!-- Asignar alto y ancho con CSS -->
+								<div class="col-sm-12">
+									<div id="googleMap" style="height:400px;width:400px;"></div>
+
+									<!-- Agregar Google Maps -->
+
+									<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+									<script>
+
+										var myCenter = new google.maps.LatLng(13.663942, -89.135718);
+
+										function initialize() {
+
+											var mapProp = {
+
+												center: myCenter,
+
+												zoom: 15,
+
+												scrollwheel: true,
+
+												draggable: true,
+
+												mapTypeId: google.maps.MapTypeId.ROADMAP
+
+											};
+
+											var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+											var marker = new google.maps.Marker({
+
+												position: myCenter,
+
+											});
+
+											marker.setMap(map);
+
+										}
+
+										google.maps.event.addDomListener(window, 'load', initialize);
+
+									</script>
+								</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!--Pie de página-->
+
+<footer class="container-fluid text-center">
+
+	<a href="#inicio" title="Ir al inicio">
+	
+	<span class="glyphicon glyphicon-home"></span>
+	
+	</a>
+	
+	<p>Página creada por: <a href="#inicio" title="Visite nuestro sitio">www.mundodeportivo.com</a></p>
+	
+	</footer>
+	<!--Script para añadir desplazamiento suave-->
+
+	<script>
+
+		$(document).ready(function () {
+
+			// Agrega desplazamiento suave a anclas en barra de navegación y pie.
+
+			$(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+				// Removiendo comportamiento por defecto.
+
+				event.preventDefault();
+
+				// Almacenando el contenedor destino.
+
+				var hash = this.hash;
+
+				// Agregando desplazamiento suave.
+
+				// El 900 son los milisegundos para moverse.
+
+				$('html, body').animate({
+
+					// Moviendo sitio a contenedor destino.
+
+					scrollTop: $(hash).offset().top
+
+				}, 900, function () {
+
+					// Añade el ancla a la dirección.
+
+					window.location.hash = hash;
+
+				});
+
+			});
+
+		})
+
+	</script>
+</body>
+
+</html>
